@@ -24,9 +24,6 @@ O FCM(FC Carrer Manager) é um gerenciador de modo carreira do Fifa/Ea FC, que v
 
 ## Modelagem do Banco
 
-![Logic model - BRMW.pdf](https://github.com/user-attachments/files/19828554/Logic.model.-.BRMW.pdf)
-
-
 ### A modelagem do banco se encontra no seguinte link:
 
 https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
