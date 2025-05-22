@@ -1,6 +1,8 @@
-import { Button, Input } from "@rneui/base";
-import { useRouter } from "expo-router";
-import { StyleSheet, View } from "react-native";
+import { Input, Text } from "@rneui/base";
+import { Link, useRouter } from "expo-router";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
+import Logo from "./components/Logo";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 export default function _screen() {
   const router = useRouter();
@@ -9,21 +11,41 @@ export default function _screen() {
     console.log("TODO: register user!");
     router.push("/(auth)/(home)/home");
   };
+
   return (
     <View style={styles.container}>
-      <Input label="Name" placeholder="Fulano da Silva" />
-      <Input label="Email" placeholder="fulano@example.com" />
-      <Input label="Password" placeholder="password" secureTextEntry />
+      <Logo />
       <Input
-        label="Password Confirmation"
+        label="Name"
+        className="w-[70] h-[70] rounded-full bg-gray-400"
+        placeholder="Fulano da Silva"
+      />
+      <Input
+        label="Email"
+        className="w-[70] h-[70] rounded-full bg-gray-400"
+        placeholder="fulano@example.com"
+      />
+      <Input
+        label="Password"
+        className="w-[70] h-[70] rounded-full bg-gray-400"
         placeholder="password"
         secureTextEntry
       />
-      <Button
-        title="Register"
-        containerStyle={styles.register}
-        onPress={handleRegister}
+      <Input
+        label="Password Confirmation"
+        className="w-[70] h-[70] rounded-full bg-gray-400"
+        placeholder="password"
+        secureTextEntry
       />
+      <TouchableOpacity
+        onPress={handleRegister}
+        className="w-[70] h-[70] rounded-full bg-blue-500 items-center justify-center"
+      >
+        <FontAwesome6 name="play" size={24} color="black" />
+      </TouchableOpacity>
+      <Link href="/">
+        <Text className="font-semibold text-sky-500">Have Account? Login</Text>
+      </Link>
     </View>
   );
 }

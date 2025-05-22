@@ -6,22 +6,22 @@ import useNavigationExitOnBack from "../../../hooks/useNavigationExitOnBack";
 import { Link } from "expo-router";
 
 import { data } from "../../../mocks/data";
+import Logo from "../../components/Logo";
+import Card from "../../components/Card";
 
 export default function _screen() {
   useNavigationExitOnBack();
 
+  const item = data[0];
   return (
     <View style={styles.container}>
-      <Text h1>Home</Text>
-
-      {data.map((carrer, index) => (
-        <Link
-          key={index}
-          href={{ pathname: "/(auth)/(home)/details", params: carrer }}
-        >
-          Details: {carrer.carrer}
+      <Logo />
+      <Text className="text-3xl font-semibold text-left">Last Accesed</Text>
+      <Card title="Last Carrer">
+        <Link href={{ pathname: "/(auth)/(home)/details", params: item }}>
+          Details: {item.carrer}
         </Link>
-      ))}
+      </Card>
     </View>
   );
 }
