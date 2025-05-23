@@ -22,8 +22,20 @@ O FCM(FC Carrer Manager) é um gerenciador de modo carreira do Fifa/Ea FC, que v
 - [ ] Adicionar jogadores gerados pelo sistema, como os das categorias de base e regens.
 - [ ] Adicionar o time que você criou, caso tenha começado uma carreira utilizando o "Crie seu time".
 
+## Modelagem das telas
+
+### A modelagem das telas do projeto se encontra no seguinte link: 
+
+https://www.figma.com/design/Dff3UYQPM6RUy2gOGBWwjv/FCM?node-id=0-1&t=ZpdmG50jjAQaoMOL-1
+
 ## Modelagem do Banco
 
 ### A modelagem do banco se encontra no seguinte link:
 
 https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
+
+## Sprints do planejamento
+- [X] Semana 1 - Instalação das Bibliotecas a serem utilizadas
+- [X] Semana 2 - Telas e Mocks de dados(um molde de como deve ficar)
+- [X] Semana 3 - Estilização e implementação do Design de acordo com o modelo feito no Figma
+- [ ] Semana 4 - 
