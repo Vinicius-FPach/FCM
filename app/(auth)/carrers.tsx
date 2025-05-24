@@ -8,6 +8,7 @@ import { data } from "../../mocks/data";
 import Logo from "../components/Logo";
 import Card from "../components/Card";
 import Scrollable from "../components/Scrollable";
+import ExpandCard from "../components/ExpandButton";
 
 export default function _screen() {
   useNavigationExitOnBack();
@@ -16,15 +17,17 @@ export default function _screen() {
       <Logo />
       <Text h1>Carrers</Text>
       <Scrollable>
-        <Card title="My Carrers">
-          {data.map((carrer, index) => (
-            <Link
-              key={index}
-              href={{ pathname: "/(auth)/(home)/details", params: carrer }}
-            >
-              Details: {carrer.carrer}
-            </Link>
-          ))}
+        <Card title={data[1].carrer}>
+          <ExpandCard>
+            {data.map((carrer, index) => (
+              <Link
+                key={index}
+                href={{ pathname: "/(auth)/(home)/details", params: carrer }}
+              >
+                1°Carrer: {carrer.carrer}
+              </Link>
+            ))}
+          </ExpandCard>
         </Card>
       </Scrollable>
     </View>

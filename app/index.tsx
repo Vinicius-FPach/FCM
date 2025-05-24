@@ -4,6 +4,7 @@ import { View, TouchableOpacity } from "react-native";
 import useNavigationExitOnBack from "../hooks/useNavigationExitOnBack";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import Logo from "./components/Logo";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 export default function _screen() {
   useNavigationExitOnBack();
@@ -18,6 +19,7 @@ export default function _screen() {
   return (
     <View className="flex-1 bg-slate-300 items-center justify-center p-14">
       <Logo />
+      <MaterialCommunityIcons name="account-circle" size={50} color="black" />
       <Text className="text-center text-5xl mb-10">Login</Text>
       <Input
         label="Email:"

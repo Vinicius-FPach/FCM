@@ -6,9 +6,5 @@ type ScrollableProps = {
 };
 
 export default function Scrollable({ children }: ScrollableProps) {
-  return (
-    <ScrollView>
-      <Text>Children</Text>
-    </ScrollView>
-  );
+  return <ScrollView>{children}</ScrollView>;
 }

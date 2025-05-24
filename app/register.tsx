@@ -3,6 +3,7 @@ import { Link, useRouter } from "expo-router";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import Logo from "./components/Logo";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 export default function _screen() {
   const router = useRouter();
@@ -15,6 +16,7 @@ export default function _screen() {
   return (
     <View style={styles.container}>
       <Logo />
+      <MaterialCommunityIcons name="account-circle" size={50} color="black" />
       <Input
         label="Name"
         className="w-[70] h-[70] rounded-full bg-gray-400"
