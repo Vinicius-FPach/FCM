@@ -59,7 +59,7 @@ yarn add axios
 
 ### React Native Elements:
 
-yarn add @rneui/base@edge @rneui/themed@edge
+yarn add @rneui/themed @rneui/base
 
 ### Expo-Router:
 
