@@ -45,7 +45,7 @@ https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
 
 Estilizei a tela de login, registro e os componentes com native wind 
 
-Isolei componentes que se repetiam e parametrizei os componentes
+Isolei componentes que se repetiam e parametrizei os componentes seguindo os conceitos da aula “Boas práticas para a criação de componentes reutilizáveis”
 
 ## Bibliotecas necessárias: 
 
