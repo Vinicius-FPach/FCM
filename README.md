@@ -36,6 +36,30 @@ https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
 
 ## Sprints do planejamento
 - [X] Semana 1 - Instalação das Bibliotecas a serem utilizadas
-- [X] Semana 2 - Telas e Mocks de dados(um molde de como deve ficar)
+- [X] Semana 2 - Telas com navegação entre elas e Mocks de dados(um molde de como deve ficar)
 - [X] Semana 3 - Estilização e implementação do Design de acordo com o modelo feito no Figma
-- [ ] Semana 4 - Criação dos componentes 
+- [X] Semana 4 - Criação dos componentes
+- [ ] Semana 5 - 
+
+
+## Bibliotecas necessárias: 
+
+### Zustand: 
+
+yarn add zustand
+
+### Axios: 
+
+yarn add axios
+
+### React Native Elements:
+
+yarn add @rneui/base@edge @rneui/themed@edge
+
+### Expo-Router:
+
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+### NativeWind 
+
+yarn add nativewind tailwindcss@^3.4.17 react-native-reanimated@3.16.2 react-native-safe-area-context
