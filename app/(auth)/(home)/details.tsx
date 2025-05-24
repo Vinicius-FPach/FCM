@@ -11,7 +11,7 @@ export default function details() {
   return (
     <View>
       <Text h2>Carrer Details</Text>
-      <Text className="text-6xl text-gray-500">Name: {carrer}</Text>
+      <Text className="text-6xl text-gray-300">Name: {carrer}</Text>
       <Text h4>Team: {team}</Text>
       <Text h4>Season: {season}</Text>
     </View>
