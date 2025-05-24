@@ -41,6 +41,11 @@ https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
 - [X] Semana 4 - Criação dos componentes
 - [ ] Semana 5 - 
 
+## Atualizações desde o último checkpoint:
+
+Estilizei a tela de login, registro e os componentes com native wind 
+
+Isolei componentes que se repetiam e parametrizei os componentes
 
 ## Bibliotecas necessárias: 
 
