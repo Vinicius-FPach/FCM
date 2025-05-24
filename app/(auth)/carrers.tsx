@@ -17,19 +17,39 @@ export default function _screen() {
       <Logo />
       <Text h1>Carrers</Text>
       <Scrollable>
+        <Card title={data[0].carrer}>
+          <ExpandCard
+            title={data[0].carrer}
+            team={data[0].carrer}
+            season={data[0].season}
+            goalspro={data[0].season}
+            goalssuf={data[0].season}
+            games={data[0].season}
+          />
+        </Card>
         <Card title={data[1].carrer}>
-          <ExpandCard>
-            {data.map((carrer, index) => (
-              <Link
-                key={index}
-                href={{ pathname: "/(auth)/(home)/details", params: carrer }}
-              >
-                1°Carrer: {carrer.carrer}
-              </Link>
-            ))}
-          </ExpandCard>
+          <ExpandCard
+            title={data[1].carrer}
+            team={data[1].carrer}
+            season={data[1].season}
+            goalspro={data[1].season}
+            goalssuf={data[1].season}
+            games={data[1].season}
+          />
         </Card>
       </Scrollable>
     </View>
   );
 }
+
+/**
+ * 
+{data.map((carrer, index) => (
+ <Link
+   key={index}
+   href={{ pathname: "/(auth)/(home)/details", params: carrer }}
+ >
+   1°Carrer: {carrer.carrer}
+ </Link>
+))}
+*/

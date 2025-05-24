@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { Tabs } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 import { Icon } from "@rneui/base";
 import { useTheme } from "@rneui/themed";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
@@ -40,6 +40,7 @@ export default function _layout() {
           title: "Carrers",
         }}
       />
+      <Stack.Screen name="edit" options={{ headerShown: false }} />
     </Tabs>
   );
 }

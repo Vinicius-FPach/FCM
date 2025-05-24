@@ -16,7 +16,7 @@ export default function _screen() {
   return (
     <View style={styles.container}>
       <Logo />
-      <Text className="text-3xl font-semibold text-left">Last Accesed</Text>
+      <Text className="text-4xl font-semibold text-left">Last Accesed</Text>
       <Card title="Last Carrer">
         <Link href={{ pathname: "/(auth)/(home)/details", params: item }}>
           Details: {item.carrer}
