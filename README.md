@@ -39,7 +39,7 @@ https://app.brmodeloweb.com/#!/publicview/6805ab4534ce7610b017e20b
 - [X] Semana 2 - Telas com navegação entre elas e Mocks de dados(um molde de como deve ficar)
 - [X] Semana 3 - Estilização e implementação do Design de acordo com o modelo feito no Figma
 - [X] Semana 4 - Criação dos componentes
-- [ ] Semana 5 - Persistência de Dados Local com SQLite
+- [ ] Semana 5 - Persistência de Dados via Firebase
 
 ## Atualizações desde o último checkpoint:
 
